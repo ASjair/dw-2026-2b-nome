@@ -15,11 +15,13 @@
 
         $nome = $linha['nome'];
         $email = $linha['email'];
+        $idusuario = $linha['idusuario'];
         // $foto = $linha['foto'];
         
         session_start();
         $_SESSION['email'] = $email;
         $_SESSION['nome'] = $nome;
+        $_SESSION['idusuario'] = $idusuario;
         
         header("Location: principal.php");
     }

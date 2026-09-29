@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="form_postagem.php">Fazer nova postagem</a>
+    <form action="salvar_postagem.php" method="post">
+        Texto: <br>
+        <input type="text" name="texto"> <br>
+
+        <input type="submit" value="Postar">
+    </form>
 </body>
 </html>

@@ -14,5 +14,7 @@
 
         <input type="submit" value="Logar">
     </form>
+
+    <a href="form_usuario.php">Não tenho cadastro.</a>
 </body>
 </html>
