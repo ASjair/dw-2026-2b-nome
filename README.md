@@ -1,23 +1,37 @@
-# dw-2026-2b
+# Rede Social - Projeto de exemplo 2B 2026 (dw-2026-2b)
 
-Projeto de exemplo do 2o B - 2026
+Projeto criado com HTML, CSS, PHP e Docker para apresentar alguns conceitos e funcionalidades para a turma do 2B de 2026.
 
-## Tarefas
+Possui a documentação do banco. Contém relacionamentos `n:n`.
 
-Todos os alunos devem criar:
-- Tela de cadastro de usuario;
-- Tela de login;
-- Tela de criação de postagem.
+## Equipe de Desenvolvimento
 
-> ⚠️ Alunos de recuperação paralela devem entregar/apresentar essas três telas na próxima aula (29/09).
-
-## Exercício (24/09)
-
-Deve ser realizado em duplas (ou individualmente).
-
-Envie por e-mail (`lucas.faria@ifgoiano.edu.br`) em formato `.zip` (compactado).
-
-Os alunos devem criar:
-- Página capaz de listar todas as postagens (com opção de deletar postagem);
-- Página capaz de listar todos os comentários (com opção de deletar comentário);
-
+- Lucas José de Faria [@lucasljf](https://github.com/lucasljf)
+- Anna Beatriz de Sousa Silva
+- Bianca Ribeiro Pires
+- Caio Vinícius Rolins de Oliveira
+- Diully Silva de Carvalho
+- Gabryel Vieira Passos
+- Giulia Luiza Rufino Moraes Vieira
+- Guilherme Antonio Oliveira Silva
+- Isabella Moreira Marçal
+- Jair Souza Viana
+- João Pedro Silva Cruz
+- Kauan Fillipe da Silva Rodrigues
+- Lara Rayane Cruz Ferreira
+- Luana de Morais Silva
+- Luís Gustavo Arriel de Melo
+- Luiz Eduardo Bezerra de Jesus
+- Maria Clara de Sousa Rosa
+- Maria Eduarda Cardoso do Nascimento
+- Matheus de Oliveira Paiva
+- Monique Almeida Alves
+- Pedro Felipe Rosa dos Santos
+- Pedro Henrique Pereira de Lima Cordeiro
+- Priscylla Souza da Silva
+- Rafaella Batista dos Santos
+- Sarah Gabriela Borba
+- Tales Tavares Pidde
+- Thaywan Pietro Silva Carvalho
+- Victor Gabriel da Silva Cunha
+- Yago Pereira Santiago
