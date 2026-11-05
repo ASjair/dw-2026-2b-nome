@@ -7,5 +7,8 @@
 </head>
 <body>
     <a href="form_postagem.php">Fazer nova postagem</a>
+    <a href="index.php">voltar ao início</a>
+    <a href="listar_postagem.php">Olhar a lista</a>
+
 </body>
 </html>
