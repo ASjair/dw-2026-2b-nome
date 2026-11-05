@@ -10,7 +10,7 @@
             border-style: solid;
         }
 
-        .postagens {
+        .comentarios {
             border-color: blue;
             padding: 10px;
         }
@@ -26,7 +26,7 @@
 <body>
     <h2>Lista de postagem</h2>
 
-    <div class="postagens">
+    <div class="comentarios">
         <?php
         require_once "conexao.php";
 
@@ -34,9 +34,12 @@
             FROM postagem, usuario
             WHERE postagem.idusuario = usuario.idusuario;";
 
-        $postagens = mysqli_query($conexao, $sql);
+        $postagens2 = mysqli_prepare($conexao, $sql);
 
-        while ($postagem = mysqli_fetch_array($postagens)) {
+        mysqli_stmt_execute($postagens2);
+
+
+        while ($postagem = mysqli_fetch_array($postagens2)) {
             $idpostagem = $postagem['idpostagem'];
             $texto = $postagem['texto'];
             $data_hora = $postagem['data_hora'];
@@ -58,14 +61,18 @@
             echo "<div>";
             $sql2 = "SELECT comentario.idcomentario, comentario.idusuario, comentario.texto, usuario.username, usuario.nome, usuario.foto
                 FROM comentario, usuario
-                WHERE idpostagem = $idpostagem
+                WHERE idpostagem = ?
                 AND comentario.idusuario = usuario.idusuario ORDER BY comentario.idcomentario;";
-            $comentarios = mysqli_query($conexao, $sql2);
-            $quantidade_comentario = mysqli_num_rows($comentarios);
+            
+            $comentarios2 = mysqli_prepare($conexao, $sql2);
+            mysqli_stmt_bind_param($comentarios2, "s", $email, $senha);
+            $comentarios = mysqli_stmt_execute($comentarios2);
+
+            $quantidade_comentario = mysqli_num_rows($comentarios2);
             if ($quantidade_comentario == 0) {
                 echo "Seja o primeiro a comentar...";
             } else {
-                while ($comentario = mysqli_fetch_array($comentarios)) {
+                while ($comentario = mysqli_fetch_array($comentarios2)) {
                     $idcomentario = $comentario['idcomentario'];
                     $comentario_idusuario = $comentario['idusuario'];
                     $comentario_texto = $comentario['texto'];
